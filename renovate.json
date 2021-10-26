@@ -1,0 +1,10 @@
+{
+  "extends": ["config:base", ":prConcurrentLimit10", "group:allNonMajor"],
+  "postUpdateOptions": ["yarnDedupeFewer"],
+  "packageRules": [
+    {
+      "packagePatterns": ["^@types/"],
+      "rangeStrategy": "update-lockfile"
+    }
+  ]
+}
