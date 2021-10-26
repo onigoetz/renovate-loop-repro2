@@ -3,8 +3,9 @@
   "postUpdateOptions": ["yarnDedupeFewer"],
   "packageRules": [
     {
-      "packagePatterns": ["^@types/"],
-      "rangeStrategy": "update-lockfile"
+      
+      "rangeStrategy": "update-lockfile",
+      "matchPackagePatterns": ["^@types/"]
     }
   ]
 }
